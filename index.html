@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lämpötilamuunnin</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="muunnin">
+            <h1>Lämpötilamuunnin</h1>
+            <div id="muunnos-valinta">
+                <label for="muunnos">Valitse muunnos:</label>
+                <select id="muunnos">
+                    <option value="celsiusToFahrenheit">Celsius → Fahrenheit</option>
+                    <option value="fahrenheitToCelsius">Fahrenheit → Celsius</option>
+                </select>
+            </div>
+            <div id="syotto">
+                <p>Syötä lämpötila:</p>
+                <input type="text" id="lampotila">
+                <button onclick="muunnaLampotila()">Muunna</button>
+            </div>
+            <div id="desimaalitValinta">
+                <p>Valitse desimaalien tarkkuus:</p>
+                <label><input type="radio" name="desimaalit" value="1" checked> 1 desimaali</label>
+                <label><input type="radio" name="desimaalit" value="2"> 2 desimaalia</label>
+                <label><input type="radio" name="desimaalit" value="3"> 3 desimaalia</label>
+            </div>
+        </div>
+        <div id="tulos">
+            <div id="tulos-container">
+                <p id="tulos-teksti"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
